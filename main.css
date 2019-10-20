@@ -77,11 +77,11 @@ button {
   background-color: #c445c1;
 }
 
-/* @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   img {
     object-fit: cover;
     width: 200px;
     height: 200px;
     border-radius: 50%;
   }
-} */
+}
