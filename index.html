@@ -52,7 +52,7 @@
               <h4 class="h4">FULL NAME</h4>
               <p>
                 <span id="fullname">Rattana Kiangram</span>
-                <!-- <button id="rename" onclick="rename()" style="width: 50px; color: white; border-radius: 30px; margin: 0 8px"><i class="fa fa-pencil"></i></button> -->
+                <button id="rename" onclick="rename()" style="width: 50px; color: white; border-radius: 30px; margin: 0 8px"><i class="fa fa-pencil"></i></button>
               </p>
               <h4 class="h4">MY NICKNAME </h4>
               <p>Rat</p>
@@ -104,7 +104,7 @@
           <div style="margin: 16px">G Suite</div>
           <div style="margin: 16px">Office 365</div>
         </div>
-        <!-- <h4 class="h4" style="text-align: center">OPTIONAL SKILLS</h4>
+        <h4 class="h4" style="text-align: center">OPTIONAL SKILLS</h4>
         <div style="display: flex;justify-content: center; width: 100%">
           <div id="opt-skill">None</div>
         </div>
@@ -113,7 +113,7 @@
             style="width: 100px; color: white; border-radius: 30px; margin: 0 8px">Add</button>
           <button id="remove" onclick="remove()"
             style="width: 100px; color: white; border-radius: 30px; margin: 0 8px">Remove</button>
-        </div> -->
+        </div>
       </div>
     </div>
   </div>
@@ -128,7 +128,7 @@
     </div>
   </div>
 
-  <!-- <div style="position: fixed; bottom: 10px; right: 30px;">
+  <div style="position: fixed; bottom: 10px; right: 30px;">
     <div
       style="border-radius: 10px; background-color: white; display: flex; width: 100%; height: 25px;; justify-content: center; padding: 8px; margin: 8px">
       <button id="primary-color" onclick="changeColor()" class="bg-color-primary"
@@ -136,7 +136,7 @@
       <button id="secondary-color" onclick="changeColor()" class="bg-color-secondary"
         style="margin: 0 4px"></button>
     </div>
-  </div> -->
+  </div>
 
   <script>
     function myFunction() {
@@ -152,53 +152,53 @@
         window.open(html5.getClickTag(), "_blank");
       }
     }
-    // function add() {
-    //   document.getElementById("add").onclick = function () {
-    //     var skill = prompt("Please enter optional skills:", "Coding");
-    //     if (skill == null || skill == "") {
-    //       alert("User cancelled the prompt.");
-    //     } else {
-    //       alert("Optional skill already added " + skill);
-    //       document.getElementById("opt-skill").innerHTML = skill;
-    //     }
-    //   }
-    // }
-    // function rename() {
-    //   document.getElementById("rename").onclick = function () {
-    //     var name = prompt("Rename:", "Rattana Kiangram");
-    //     if (name == null || name == "") {
-    //       alert("User cancelled the prompt.");
-    //     } else {
-    //       alert("Rename sucess " + name);
-    //       document.getElementById("name").innerHTML = name;
-    //       document.getElementById("fullname").innerHTML = name;
-    //     }
-    //   }
-    // }
-    // function remove() {
-    //   document.getElementById("remove").onclick = function () {
-    //     if (confirm("Please confirm optional skill was remove")) {
-    //       alert("Optional skill already removed");
-    //       document.getElementById("opt-skill").innerHTML = "None";
-    //     } else {
-    //       alert("User cancelled");
-    //     }
-    //   }
-    // }
-    // function changeColor(className) {
-    //   document.getElementById("primary-color").onclick = function () {
-    //     elements = document.getElementsByClassName('body bg-color-primary');
-    //     for (var i = 0; i < elements.length; i++) {
-    //       elements[i].style.backgroundColor = "#c9a6e0";
-    //     }
-    //   };
-    //   document.getElementById("secondary-color").onclick = function () {
-    //     elements = document.getElementsByClassName('body bg-color-primary');
-    //     for (var i = 0; i < elements.length; i++) {
-    //       elements[i].style.backgroundColor = "#dd6565";
-    //     }
-    //   }
-    // }
+    function add() {
+      document.getElementById("add").onclick = function () {
+        var skill = prompt("Please enter optional skills:", "Coding");
+        if (skill == null || skill == "") {
+          alert("User cancelled the prompt.");
+        } else {
+          alert("Optional skill already added " + skill);
+          document.getElementById("opt-skill").innerHTML = skill;
+        }
+      }
+    }
+    function rename() {
+      document.getElementById("rename").onclick = function () {
+        var name = prompt("Rename:", "Rattana Kiangram");
+        if (name == null || name == "") {
+          alert("User cancelled the prompt.");
+        } else {
+          alert("Rename sucess " + name);
+          document.getElementById("name").innerHTML = name;
+          document.getElementById("fullname").innerHTML = name;
+        }
+      }
+    }
+    function remove() {
+      document.getElementById("remove").onclick = function () {
+        if (confirm("Please confirm optional skill was remove")) {
+          alert("Optional skill already removed");
+          document.getElementById("opt-skill").innerHTML = "None";
+        } else {
+          alert("User cancelled");
+        }
+      }
+    }
+    function changeColor(className) {
+      document.getElementById("primary-color").onclick = function () {
+        elements = document.getElementsByClassName('body bg-color-primary');
+        for (var i = 0; i < elements.length; i++) {
+          elements[i].style.backgroundColor = "#c9a6e0";
+        }
+      };
+      document.getElementById("secondary-color").onclick = function () {
+        elements = document.getElementsByClassName('body bg-color-primary');
+        for (var i = 0; i < elements.length; i++) {
+          elements[i].style.backgroundColor = "#dd6565";
+        }
+      }
+    }
   </script>
 </body>
 
