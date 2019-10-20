@@ -1,0 +1,55 @@
+
+.footer{
+    box-sizing: border-box;
+    background-color:#a18cd1;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 80%;
+    margin: auto;
+    padding: 15px;
+    
+}
+
+.form{
+    box-sizing:content-box;
+    border-color: black;
+    background-color: lawngreen;
+}
+
+button{
+    background-color: #c445c1;
+    color:#5a2a7b;
+    font-size: 13px;
+}
+
+.flex-container > div {
+  padding: 20px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+.display a{
+    display: block;
+    padding:20px 80px; 
+    font-size: 40px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.display input{
+    text-align: left;
+    display: block;
+    padding:5px 5px; 
+    width:200px;
+    border-radius:30px; 
+    background-color: #d0c4eb;
+    margin-bottom: 15px;
+}
+
+.display p{
+    justify-content: space-around;
+    font-size: 15px;
+}

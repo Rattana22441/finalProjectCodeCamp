@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Resume</title>
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="nav-bar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="footer.css">
+  <link href="https://fonts.googleapis.com/css?family=Rancho&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="hero-image">
+    <div class="hero-text">
+      <div style="font-family: 'Rancho', cursive;">
+        <h1 id="name" style="font-size:50px">Rattana Kiangram</h1>
+        <p>B.S. (Information and Communication Technology).In progress</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="topnav" id="myTopnav">
+    <a href="#about" onclick="goTo()">ABOUT</a>
+    <a href="#hobby" onclick="goTo()">HOBBY</a>
+    <a href="#skills" onclick="goTo()">SKILLS</a>
+    <a href="#contact" onclick="goTo()">CONTACT</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div> -->
+
+  <div id="about" class="body">
+    <h1 class="h1">ABOUT ME</h1>
+    <div style="display: flex; width: 100%; justify-content: center;">
+      <div class="center">
+        <div style="display: flex; justify-content:center; width: 100%">
+          <div class="flex-container">
+            <div class="img">
+              <img src="./assets/profile.jpg" alt="Avatar">
+            </div>
+          </div>
+        </div>
+        <div style="display: flex; justify-content:center; width: 100%">
+          <div class="flex-container">
+            <div>
+              <h4 class="h4">FULL NAME</h4>
+              <p>
+                <span id="fullname">Rattana Kiangram</span>
+                <!-- <button id="rename" onclick="rename()" style="width: 50px; color: white; border-radius: 30px; margin: 0 8px"><i class="fa fa-pencil"></i></button> -->
+              </p>
+              <h4 class="h4">MY NICKNAME </h4>
+              <p>Rat</p>
+              <h4 class="h4">E-MAIL</h4>
+              <p>rattana_rak@hotmail.co.th</p>
+              <h4 class="h4">EDUCATION</h4>
+              <p>B.S. (Information and Communication Technology) at Sripatum University</p>
+            </div>
+          </div>
+        </div>
+        <div style="display: flex; justify-content:center; width: 100%">
+          <p style="padding: 18px">
+            My name is Rattana Kiangram. I'm studying for a bachelor of science in information
+            and communication technology major at Sripatum University, Bangkok, Thailand.
+            In addition to holding the position of studies at University, I also interested in coding.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="hobby" class="body bg-color-primary" style="padding: 10px;">
+    <h1 class="h1" style="text-align: center;color: white;;">HOBBY</h1>
+    <div class="icon-interest">
+      <i class="fa fa-paint-brush" aria-hidden="true"></i>
+      <i class="fa fa-music" aria-hidden="true"></i>
+      <i class="fa fa-gamepad" aria-hidden="true"></i>
+      <i class="fa fa-book" aria-hidden="true"></i>
+    </div>
+    <h1 class="h1" style="text-align: center;color: white;;">MY INTERESTS</h1>
+    <div class="icon-interest">
+      <img style="border-radius: 1%;" src="./assets/web-programming.png" alt="code">
+    </div>
+    <h1 class="h1" style="color: white;">EXPERIENCES</h1>
+    <div style="display: flex; width: 100%; justify-content: center;">
+      <div class="center">
+        <p style="color: white;text-align: center;">Telesales At Defense Me Co.,Ltd</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="skills" class="body">
+    <h1 class="h1">SKILLS</h1>
+    <div style="display: flex; width: 100%; justify-content: center;">
+      <div class="center">
+        <div style="display: flex;justify-content: space-around; width: fit-content">
+          <div style="margin: 16px">Photoshop</div>
+          <div style="margin: 16px">Figma</div>
+          <div style="margin: 16px">G Suite</div>
+          <div style="margin: 16px">Office 365</div>
+        </div>
+        <!-- <h4 class="h4" style="text-align: center">OPTIONAL SKILLS</h4>
+        <div style="display: flex;justify-content: center; width: 100%">
+          <div id="opt-skill">None</div>
+        </div>
+        <div style="display: flex; width: 100%; justify-content: center; margin: 12px 0">
+          <button id="add" onclick="add()"
+            style="width: 100px; color: white; border-radius: 30px; margin: 0 8px">Add</button>
+          <button id="remove" onclick="remove()"
+            style="width: 100px; color: white; border-radius: 30px; margin: 0 8px">Remove</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+  <div id="contact" class="body bg-color-primary" style="padding: 10px;">
+    <h1 class="h1" style="text-align: center;color: white;;">CONTACT</h1>
+    <div class="icon-interest">
+      <a href="https://web.facebook.com/Rattana22441"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/invites/contact/?i=1kilj1pcbt0z6&utm_content=nmhj1n"><i class="fa fa-instagram"
+          aria-hidden="true"></i></a>
+      <a href="https://twitter.com/BuaRattana"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    </div>
+  </div>
+
+  <!-- <div style="position: fixed; bottom: 10px; right: 30px;">
+    <div
+      style="border-radius: 10px; background-color: white; display: flex; width: 100%; height: 25px;; justify-content: center; padding: 8px; margin: 8px">
+      <button id="primary-color" onclick="changeColor()" class="bg-color-primary"
+        style="margin: 0 4px"></button>
+      <button id="secondary-color" onclick="changeColor()" class="bg-color-secondary"
+        style="margin: 0 4px"></button>
+    </div>
+  </div> -->
+
+  <script>
+    // function myFunction() {
+    //   var x = document.getElementById("myTopnav");
+    //   if (x.className === "topnav") {
+    //     x.className += " responsive";
+    //   } else {
+    //     x.className = "topnav";
+    //   }
+    // };
+    // function goTo() {
+    //   document.getElementById("myTopnav").onclick = function () {
+    //     window.open(html5.getClickTag(), "_blank");
+    //   }
+    // }
+    // function add() {
+    //   document.getElementById("add").onclick = function () {
+    //     var skill = prompt("Please enter optional skills:", "Coding");
+    //     if (skill == null || skill == "") {
+    //       alert("User cancelled the prompt.");
+    //     } else {
+    //       alert("Optional skill already added " + skill);
+    //       document.getElementById("opt-skill").innerHTML = skill;
+    //     }
+    //   }
+    // }
+    // function rename() {
+    //   document.getElementById("rename").onclick = function () {
+    //     var name = prompt("Rename:", "Rattana Kiangram");
+    //     if (name == null || name == "") {
+    //       alert("User cancelled the prompt.");
+    //     } else {
+    //       alert("Rename sucess " + name);
+    //       document.getElementById("name").innerHTML = name;
+    //       document.getElementById("fullname").innerHTML = name;
+    //     }
+    //   }
+    // }
+    // function remove() {
+    //   document.getElementById("remove").onclick = function () {
+    //     if (confirm("Please confirm optional skill was remove")) {
+    //       alert("Optional skill already removed");
+    //       document.getElementById("opt-skill").innerHTML = "None";
+    //     } else {
+    //       alert("User cancelled");
+    //     }
+    //   }
+    // }
+    // function changeColor(className) {
+    //   document.getElementById("primary-color").onclick = function () {
+    //     elements = document.getElementsByClassName('body bg-color-primary');
+    //     for (var i = 0; i < elements.length; i++) {
+    //       elements[i].style.backgroundColor = "#c9a6e0";
+    //     }
+    //   };
+    //   document.getElementById("secondary-color").onclick = function () {
+    //     elements = document.getElementsByClassName('body bg-color-primary');
+    //     for (var i = 0; i < elements.length; i++) {
+    //       elements[i].style.backgroundColor = "#dd6565";
+    //     }
+    //   }
+    // }
+  </script>
+</body>
+
+</html>
